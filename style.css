@@ -1,0 +1,38 @@
+body {
+    background-color: grey;
+    border-color: greenyellow;
+    border-style: groove;
+    border-width: 15px;
+    margin-left: 240px;
+    margin-right: 240px;
+    margin-bottom: unset;
+    text-align: center;
+    color:white;
+
+}
+
+p {
+    font-size: 24px;
+}
+
+button {
+    font-size: 24px;
+    color: greenyellow;
+    background-color: black;
+    border-width: 2x;
+    border-color: darkgreen;
+
+}
+
+button:hover {
+    background-color: indigo;
+    color: firebrick;
+
+}
+
+div{
+    background-color:#419D78;
+    color:#EFD0CA;
+    font-size:20px;
+    text-align:center;
+  }
