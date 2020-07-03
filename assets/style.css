@@ -8,7 +8,12 @@ body {
     margin-bottom: unset;
     text-align: center;
     color:white;
+}
 
+Start {
+    align-content: center;
+    text-align: center;
+    justify-content: center;
 }
 
 p {
@@ -24,7 +29,7 @@ button {
 
 }
 
-button:hover {
+button:active {
     background-color: indigo;
     color: firebrick;
 

@@ -4,36 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Knowledge Quiz!</title>
-    
-    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="./assets/script.js"></script>
+    <link rel="stylesheet" href="assets/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>   
 
 <h1>Knowledge Quiz!</h1>
-    <element class= "container1" type= containter>
-        <h2>Question 1</h2>
+    <button 
+    id="Start" 
+     onclick="Start()"
+    style="display: block;"
+     >Start</button>
+   
+    <element id="container1"
+     class= "container1"
+     type= containter
+     style="display: none;">
+        
+     <h2>Question 1</h2>
         <p>The if statement specifies a block of code to be 
             executed if a condition is______?</p>
-        <button onclick="rightAnswer()">True</button><button onclick="wrongAnswer()">False</button><button onclick="wrongAnswer()" >Neither</button>
+        <button onclick="rightAnswer()">True</button>
+        <button onclick="wrongAnswer()">False</button>
+        <button onclick="wrongAnswer()" >Neither</button>
     
     </element>
+    <div class="score" id="score">Score:</div><div  class="center" id="info">Your Info</div>
+
+    <div>Time Left = <span onclick="timerstart()" id=timer ></span></div>
    
-
-
-    <div>Time Left = <span id='timer'></span></div>
-    <script> src="script.js" </script>
-    
-    <script>
-        
-           var prompt = confirm("would you like to take this knowledge quiz?");
-          if (confirm=true) {
-              nameconfirm;
-          }
-           var nameConfirm = prompt("what is your first and last name?");
-
-    </script>
-        
-    
+</body>
 
 </html>
