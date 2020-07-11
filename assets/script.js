@@ -43,7 +43,7 @@ function Start() {
 function timer() {
 
     document.getElementById("timer").innerHTML = 
-    "Time Left =" + time--;
+     time--;
 
    //console.log( time--);
   if(time < 0) {
@@ -54,40 +54,106 @@ function timer() {
   }
 };
 
-const rt = document.getElementById("rightAnswer");
- 
- 
-let counterC = 0;
+ let counterC = 0;
 let counterW = 0;
 //let score1 = "Right:" + counterC + " " + "Wrong:" + counterW;
 
   function rightAnswer() {
+    let q1 = document.getElementById("container1");
+    let q2 = document.getElementById("container2");
 
+    if (q1.style.display === "block") {
+        q1.style.display = "none"      
+    } 
+    if (q2.style.display === "none") {
+        q2.style.display = "block"
+    }
     counterC++;
 
-    
-  
-
+    time++;time++;time++;time++;time++;
+    time++;time++;time++;time++;time++;
+   
     const scr = document.getElementById("score").innerHTML =
     "Right:" + counterC + "Wrong:" + counterW;
 
-   
     console.log("right!" + " " + counterC); 
+
+
+  }
+  function rightAnswer2() {
+    let q2 = document.getElementById("container2");
+    let q3 = document.getElementById("container3");
+
+    if (q2.style.display === "block") {
+        q2.style.display = "none"      
+    } 
+    if (q3.style.display === "none") {
+        q3.style.display = "block"
+    }
+    counterC++;
+
+    time++;time++;time++;time++;time++;
+    time++;time++;time++;time++;time++;
+   
+    const scr = document.getElementById("score").innerHTML =
+    "Right:" + counterC + "Wrong:" + counterW;
+
+    console.log("right!" + " " + counterC); 
+
 
   }
 
   
   function wrongAnswer() {
-
+    let q1 = document.getElementById("container1");
+    let q2 = document.getElementById("container2");
+    
+    if (q1.style.display === "block") {
+        q1.style.display = "none"      
+    } 
+    if (q2.style.display === "none") {
+        q2.style.display = "block"
+    }
     counterW++;
 
-    time--;
+    time--;time--;time--;time--;time--;
+    time--;time--;time--;time--;time--;
+    time--;time--;time--;time--;time--;
+    time--;time--;time--;time--;time--;
+    time--;time--;time--;time--;time--;
+    time--;time--;time--;time--;time--;
 
     const wg = document.getElementById("score").innerHTML =
     "Right:" + counterC + "Wrong:" + counterW;
 
     console.log("wrong" + " " + counterW); 
-
   };
+  function wrongAnswer2() {
+    let q2 = document.getElementById("container2");
+    let q3 = document.getElementById("container3");
+
+    if (q2.style.display === "block") {
+        q2.style.display = "none"      
+    } 
+    if (q3.style.display === "none") {
+        q3.style.display = "block"
+    }
+    counterW++;
+
+    time--;time--;time--;time--;time--;
+    time--;time--;time--;time--;time--;
+    time--;time--;time--;time--;time--;
+    time--;time--;time--;time--;time--;
+    time--;time--;time--;time--;time--;
+    time--;time--;time--;time--;time--;
+
+    const wg = document.getElementById("score").innerHTML =
+    "Right:" + counterC + "Wrong:" + counterW;
+
+    console.log("wrong" + " " + counterW); 
+  };
+
+     
   
+
 
